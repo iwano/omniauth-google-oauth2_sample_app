@@ -5,6 +5,8 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'jbuilder', '~> 1.0.1'
 gem 'jquery-rails'
+gem "omniauth"
+gem "omniauth-google-oauth2"
 gem 'pry'
 gem 'sqlite3'
 gem 'turbolinks'
