@@ -1,0 +1,9 @@
+<h1>Omniauth app</h1>
+<% if current_user %>
+  <p>Welcome <%= current_user.name %></p>
+  <p><%= current_user.email %></p>
+  <img src=<%= "#{current_user.pic_url}" %> height=80 /> <br>
+  <%=link_to 'sign_out', log_out_path, method: :delete %>
+<% else %>
+  <%=link_to 'sign_in', '/auth/google_oauth2' %>
+<% end %>
